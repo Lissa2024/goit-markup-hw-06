@@ -10,30 +10,42 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
    <header class="page-header">
      <div class="head-container container">
        <nav class="nav-header">
            <a class="logo header-logo" href="./index.html">Web<span class="studio-logo">Studio</span></a>
-           <ul class="ul-header-list">
-              <li><a class="header-list line" href="./index.html">Studio</a></li>
-              <li><a class="header-list" href="">Portfolio</a></li>
-              <li><a class="header-list" href="">Contacts</a></li>
+             
+           <ul class="ul-header-list mobile-header-list">
+              <li><a class="header-list line mobile-nav-list" href="./index.html">Studio</a></li>
+              <li><a class="header-list mobile-nav-list" href="">Portfolio</a></li>
+              <li><a class="header-list mobile-nav-list" href="">Contacts</a></li>
            </ul>
        </nav>
 
        <address class="adress">
-         <ul class="adress-contacts">
+         <ul class="adress-contacts mobile-contacts">
            <li><a  class="address-list" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
            <li><a  class="address-list" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
          </ul>
        </address>
+       <button class="mobile-menu" type="button">
+         <svg class="burger-icon" width="22" height="16">
+            <use href="./images/icons-modal.svg#icon-Burger"></use>
+         </svg>
+       </button>
      </div>
    </header>
     <main>
      <!--section1-->
        <section class="header-title">
           <div class="container">
+            <picture>
+               <source srcset="./images/people-office1.jpg" media="(min-width: 1158px)"/>
+               <source srcset="./images/Dark-bg-tablet.jpg" media="(min-width: 768px)"/>
+               <source srcset="./images/Dark-bg@1x.jpg 1x, ./images/Dark-bg@2x.jpg 2x" media="(max-width: 767px)"/>
+            </picture>
             <h1 class="title">Effective Solutions for Your Business</h1>
               <button type="button" class="button">Order Service</button>
           </div>
