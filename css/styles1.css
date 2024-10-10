@@ -291,3 +291,166 @@ input {
     gap: 40px;
   }
 }
+
+/*
+.mobile-menu {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .mobile-header-list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    transition: all 0.3s ease;
+  }
+
+  .mobile-header-list.active {
+    display: flex;
+  }
+
+  .mobile-nav-list {
+    padding: 10px 0;
+    color: #000;
+  }
+
+  .mobile-menu {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+
+  .mobile-contacts {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+*/
+
+/* Загальні стилі для мобільного меню */
+.mobile-backdrop {
+  display: none; /* Приховано за замовчуванням */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Тінь фону */
+  z-index: 999;
+}
+
+.mobile-backdrop.is-open {
+  display: block; /* Відображається, коли меню відкрите */
+}
+
+.mobile-window {
+  position: relative;
+  width: 80%;
+  max-width: 320px;
+  height: 100%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.mobile-nav {
+  margin-bottom: 20px;
+}
+
+.mobile-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-punkt {
+  margin-bottom: 16px;
+}
+
+.mobile-punkt a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  display: block;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.mobile-punkt a:hover {
+  color: #007bff;
+}
+
+/* Стилі для контактів */
+.mobile-adress {
+  margin-bottom: 20px;
+}
+
+.mobile-adress-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-contacts {
+  margin-bottom: 10px;
+}
+
+.mobile-tel,
+.mobile-email {
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+}
+
+.mobile-tel:hover,
+.mobile-email:hover {
+  color: #007bff;
+}
+
+/* Стилі для іконок */
+.mobile-icon-box {
+  margin-top: 20px;
+}
+
+.mobile-icon-list {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.mobile-icon-link {
+  display: inline-block;
+}
+
+.mobile-icons {
+  fill: #333;
+  transition: fill 0.3s ease;
+}
+
+.mobile-icon-link:hover .mobile-icons {
+  fill: #007bff;
+}
+
+/* Анімація для меню */
+.mobile-window {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.mobile-backdrop.is-open .mobile-window {
+  transform: translateX(0); /* Відкриття зліва направо */
+}

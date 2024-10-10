@@ -17,15 +17,15 @@
        <nav class="nav-header">
            <a class="logo header-logo" href="./index.html">Web<span class="studio-logo">Studio</span></a>
              
-           <ul class="ul-header-list mobile-header-list">
-              <li><a class="header-list line mobile-nav-list" href="./index.html">Studio</a></li>
-              <li><a class="header-list mobile-nav-list" href="">Portfolio</a></li>
-              <li><a class="header-list mobile-nav-list" href="">Contacts</a></li>
+           <ul class="ul-header-list">
+              <li><a class="header-list line" href="./index.html">Studio</a></li>
+              <li><a class="header-list" href="">Portfolio</a></li>
+              <li><a class="header-list" href="">Contacts</a></li>
            </ul>
        </nav>
 
        <address class="adress">
-         <ul class="adress-contacts mobile-contacts">
+         <ul class="adress-contacts">
            <li><a  class="address-list" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
            <li><a  class="address-list" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
          </ul>
@@ -42,12 +42,15 @@
        <section class="header-title">
           <div class="container">
             <picture>
+               <img class="visually-hidden"
+               src="./images/people-office1.jpg" alt="office">
                <source srcset="./images/people-office1.jpg" media="(min-width: 1158px)"/>
                <source srcset="./images/Dark-bg-tablet.jpg" media="(min-width: 768px)"/>
                <source srcset="./images/Dark-bg@1x.jpg 1x, ./images/Dark-bg@2x.jpg 2x" media="(max-width: 767px)"/>
+               
             </picture>
             <h1 class="title">Effective Solutions for Your Business</h1>
-              <button type="button" class="button">Order Service</button>
+              <button type="button" class="button" data-modal-open>Order Service</button>
           </div>
           
        </section>
@@ -409,11 +412,11 @@
     </footer>
     
 <!--MODAL FORM <button class="icon__btn" type="submit" aria-label="icon-man"><i class="icon-in-btn"></i></button>-->
-             <div class="backdrop_overlay is-open">
+             <div class="backdrop_overlay is-open" data-modal>
                <div class="modal-window">
-                 <button class="btn-close" type="button"><svg class="icon-close" width="8" height="8"><use href="./images/icons.svg#icon-close-black"></use></svg></button>
+                 <button class="btn-close" type="button" data-modal-close><svg class="icon-close" width="8" height="8"><use href="./images/icons.svg#icon-close-black"></use></svg></button>
                    <p class="modal-p">Leave your contacts and we will call you back</p>
-                    <form>
+               <form>
                          <div class="first-form">
                        <label class="first-label" for="user-name">Name</label>
                         <div class="first-input-box">
@@ -422,7 +425,7 @@
                           
                         </div>
                          </div>
-                             <div class="first-form">
+                    <div class="first-form">
                        <label class="first-label" for="user-tel">Phone</label>
                        <div class="first-input-box">
                           <input class="first-input" id="user-tel" name="user-tel" type="tel">
@@ -430,16 +433,16 @@
                              <use href="./images/icons-modal.svg#icon-phone"></use>
                           </svg>
                        </div>
-                             </div>
-                                   <div class="first-form">
+                   </div>
+                      <div class="first-form">
                        <label class="first-label" for="user-email">Email</label>
                        <div class="first-input-box">
                           <input class="first-input" id="user-email" name="user-email" type="email"/>
-                          <svg class="first-icon" width="18" height="24">
-                             <use href="./images/icons-modal.svg#icon-email"></use>
+                         <svg class="first-icon" width="18" height="24">
+                            <use href="./images/icons-modal.svg#icon-email"></use>
                           </svg>
                        </div>
-                   </div>
+                      </div>
                        <div class="textarea-box">
                            <label class="first-label" for="user-comment">Comment</label>
                              <textarea class="textarea" id="user-comment" name="user-comment" placeholder="Text input"></textarea>
@@ -459,11 +462,59 @@
                                           </label>
                                </div>
                                       <button class="submit-button" type="submit">Send</button>
-                       
-                        
-                    </form>
+                     </form>
               </div>
             </div>
-
+          <div class="mobile-backdrop">
+            <div class="mobile-window">
+               <button class="mobile-close" type="button"><svg class="close-mobile" width="8" height="8"><use href="./images/icons-modal.svg#icon-close-black"></use></svg></button>
+               <nav class="mobile-nav">
+                  <ul class="mobile-list">
+                     <li class="mobile-punkt first"><a class="mobile-nav-astudio" href="#">Studio</a></li>
+                     <li class="mobile-punkt"><a class="mobile-nav-a">Portfolio</a></li>
+                     <li class="mobile-punkt"><a class="mobile-nav-a">Contacts</a></li>
+                  </ul>
+               </nav>
+               <adress class="mobile-adress">
+                  <ul class="mobile-adress-list">
+                     <li class="mobile-contacts tel"><a class="mobile-tel" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                     <li class="mobile-contacts"><a class="mobile-email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                  </ul>
+               </adress>
+               <div class="mobile-icon-box">
+                  <ul class="mobile-list-icons">
+                     <li class="mobile-icon-list">
+                        <a href="" class="mobile-icon-link">
+                           <svg class="mobile-icons" aria-label="icon-instagram" width="24" height="24">
+                              <use href="./images/icons.svg#icon-instagram"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="mobile-icon-list">
+                        <a href="" class="mobile-icon-link">
+                           <svg class="mobile-icons" aria-label="icon-twitter" width="24" height="24">
+                              <use href="./images/icons.svg#icon-twitter"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="mobile-icon-list">
+                        <a href="" class="mobile-icon-link">
+                           <svg class="mobile-icons" aria-label="icon-facebook" width="24" height="24">
+                              <use href="./images/icons.svg#icon-facebook"></use>
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="mobile-icon-list" >
+                        <a href="" class="mobile-icon-link">
+                           <svg class="mobile-icons" aria-label="icon-linkedin" width="24" height="24">
+                              <use href="./images/icons.svg#icon-linkedin"></use>
+                           </svg>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+   <script src="modal.js"></script>
 </body>
 </html>
