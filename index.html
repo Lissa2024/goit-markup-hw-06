@@ -6,7 +6,7 @@
    <title>Webstudio</title>
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.0/modern-normalize.min.css" integrity="sha512-3axTZ/bKFZH5/qLFTl4U+mDbBDFW+5QO5L7D1HnOhlhJbcNDIVJxoNm6It77g0eUdzfKZlHirayqRC2qJaAOJw==" crossorigin="anonymous" referrerpolicy="no-referrer" />        
-        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/styles1.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -30,7 +30,7 @@
            <li><a  class="address-list" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
          </ul>
        </address>
-       <button class="mobile-menu" type="button">
+       <button class="mobile-menu" type="button" id="openMenuBtn">
          <svg class="burger-icon" width="22" height="16">
             <use href="./images/icons-modal.svg#icon-Burger"></use>
          </svg>
@@ -43,11 +43,23 @@
           <div class="container">
             <picture>
                <img class="visually-hidden"
-               src="./images/people-office1.jpg" alt="office">
+               src="./images1x2x/" alt="office">
                <source srcset="./images/people-office1.jpg" media="(min-width: 1158px)"/>
                <source srcset="./images/Dark-bg-tablet.jpg" media="(min-width: 768px)"/>
                <source srcset="./images/Dark-bg@1x.jpg 1x, ./images/Dark-bg@2x.jpg 2x" media="(max-width: 767px)"/>
-               
+               <!--<picture>
+                         <source media="(min-width: 1158px)" srcset="images/photo-desktop.jpg">
+                         <source media="(min-width: 768px)" srcset="images/photo-tablet.jpg">
+                         <img src="images/photo-mobile.jpg" alt="Responsive Photo">
+                    </picture>
+                    
+                    <picture>
+  <source media="(max-width: 767px)" 
+          srcset="images/mobile-photo-1x.jpg 1x, images/mobile-photo-2x.jpg 2x">
+  <source media="(min-width: 768px)" 
+          srcset="images/desktop-photo-1x.jpg 1x, images/desktop-photo-2x.jpg 2x">
+  <img src="images/mobile-photo-1x.jpg" alt="Responsive Photo">
+</picture>-->
             </picture>
             <h1 class="title">Effective Solutions for Your Business</h1>
               <button type="button" class="button" data-modal-open>Order Service</button>
@@ -324,6 +336,7 @@
                  </li>
                  <li class="portfolio-list-item">
                     <div class="portfolio-overlay">
+                     
                         <img src="./images/img10.jpg" alt="Online Courses" width="360" height="300">
                         <p class="paragraph-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p> 
                     </div>
@@ -465,9 +478,14 @@
                      </form>
               </div>
             </div>
-          <div class="mobile-backdrop">
+        <div class="mobile-backdrop is-open" id="mobileMenuBackdrop">
             <div class="mobile-window">
-               <button class="mobile-close" type="button"><svg class="close-mobile" width="8" height="8"><use href="./images/icons-modal.svg#icon-close-black"></use></svg></button>
+               <button class="mobile-close" type="button" id="closeMenuBtn">
+                  <svg class="close-mobile" width="8" height="8">
+                     <use href="./images/icons-modal.svg#icon-close-black">
+                     </use>
+                  </svg>
+               </button>
                <nav class="mobile-nav">
                   <ul class="mobile-list">
                      <li class="mobile-punkt first"><a class="mobile-nav-astudio" href="#">Studio</a></li>
@@ -481,7 +499,7 @@
                      <li class="mobile-contacts"><a class="mobile-email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                   </ul>
                </adress>
-               <div class="mobile-icon-box">
+               
                   <ul class="mobile-list-icons">
                      <li class="mobile-icon-list">
                         <a href="" class="mobile-icon-link">
@@ -512,9 +530,10 @@
                         </a>
                      </li>
                   </ul>
-               </div>
+               
             </div>
-         </div>
-   <script src="modal.js"></script>
+         </div> 
+   <script src="/js/modal.js"></script>
+   <script src="/js/mobile-menu.js"></script>
 </body>
 </html>
