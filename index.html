@@ -41,26 +41,6 @@
      <!--section1-->
        <section class="header-title">
           <div class="container">
-            <picture>
-               <img class="visually-hidden"
-               src="./images1x2x/" alt="office">
-               <source srcset="./images/people-office1.jpg" media="(min-width: 1158px)"/>
-               <source srcset="./images/Dark-bg-tablet.jpg" media="(min-width: 768px)"/>
-               <source srcset="./images/Dark-bg@1x.jpg 1x, ./images/Dark-bg@2x.jpg 2x" media="(max-width: 767px)"/>
-               <!--<picture>
-                         <source media="(min-width: 1158px)" srcset="images/photo-desktop.jpg">
-                         <source media="(min-width: 768px)" srcset="images/photo-tablet.jpg">
-                         <img src="images/photo-mobile.jpg" alt="Responsive Photo">
-                    </picture>
-                    
-                    <picture>
-  <source media="(max-width: 767px)" 
-          srcset="images/mobile-photo-1x.jpg 1x, images/mobile-photo-2x.jpg 2x">
-  <source media="(min-width: 768px)" 
-          srcset="images/desktop-photo-1x.jpg 1x, images/desktop-photo-2x.jpg 2x">
-  <img src="images/mobile-photo-1x.jpg" alt="Responsive Photo">
-</picture>-->
-            </picture>
             <h1 class="title">Effective Solutions for Your Business</h1>
               <button type="button" class="button" data-modal-open>Order Service</button>
           </div>
@@ -122,9 +102,18 @@
        <section class="team">    
         <div class="container">
                 <h2 class="our-team">Our Team</h2> 
-        <!--team-list-->
+        <!--team-list-->  
+
            <ul class="team-list">
-               <li class="team-list-item"><img src="./images/img.jpg" alt="photo Mark Guerrero" width="264" height="260">
+               <li class="team-list-item">
+                  <picture>
+                     <source media="(min-width: 1158px)" srcset="./images/images1x2x/img@1xdekstop.jpg 1x,
+                                                 ./images/images1x2x/img@2xdekstop.jpg 2x" />
+                     <source media="(min-width: 768px)" srcset="./images/images1x2x/img@1x-tablet.jpg 1x,
+                      ./images/images1x2x/img@2x-tablet.jpg 2x" />
+                      <source media="(max-width: 767px)" srcset="./images/images1x2x/img@1xmobile.jpg 1x, ./images/images1x2x/img@2xmobile.jpg 2x" />
+                  <img src="./images/img.jpg" alt="photo Mark Guerrero" width="264" height="260">
+               </picture>
                   <div class="team-name-container">
                      <h3 class="our-team-name">Mark Guerrero</h3>
                        <p class="out-team-text">Product Designer</p>
@@ -161,7 +150,16 @@
                   </div>
                 </li>
 
-                <li class="team-list-item"> <img src="./images/img2.jpg" alt="photo Tom Ford" width="264" height="260">
+                <li class="team-list-item">
+                  <picture>
+                     <source media="(min-width: 1158px)" srcset="./images/images1x2x/img2@1xdekstop.jpg 1x,
+                                                 ./images/images1x2x/img2@2xdekstop.jpg 2x" />
+                     <source media="(min-width: 768px)" srcset="./images/images1x2x/img1@2x-tablet.jpg 1x,
+                      ./images/images1x2x/img1@2x-tablet.jpg 2x" />
+                      <source media="(max-width: 767px)" srcset="./images/images1x2x/img2@1xmobile.jpg 1x, ./images/images1x2x/img2@2xmobile.jpg 2x" />
+                      <img src="./images/img2.jpg" alt="photo Tom Ford" width="264" height="260">
+               </picture>
+                
                    <div class="team-name-container">
                       <h3 class="our-team-name">Tom Ford</h3>
                         <p class="out-team-text">Frontend Developer</p>
@@ -198,7 +196,17 @@
                     </div>
                 </li>  
            
-                <li class="team-list-item"> <img src="./images/img3.jpg" alt="photo Camila Garcia" width="264" height="260">
+                <li class="team-list-item">
+                  <picture>
+                     <source media="(min-width: 1158px)" srcset="./images/images1x2x/img3@1xdekstop.jpg 1x,
+                                                 ./images/images1x2x/img3@2xdekstop.jpg 2x" />
+                     <source media="(min-width: 768px)" srcset="./images/images1x2x/img2@1x-tablet.jpg 1x,
+                      ./images/images1x2x/img2@2x-tablet.jpg 2x" />
+                      <source media="(max-width: 767px)" srcset="./images/images1x2x/img3@1xmobile.jpg 1x, 
+                      ./images/images1x2x/img3@2xmobile.jpg 2x" />
+                      <img src="./images/img3.jpg" alt="photo Camila Garcia" width="264" height="260">
+               </picture>
+                
                    <div class="team-name-container"> 
                        <h3 class="our-team-name">Camila Garcia</h3>
                        <p class="out-team-text">Marketing</p>
@@ -235,7 +243,17 @@
                    </div>
                 </li>
 
-                <li class="team-list-item"><img src="./images/img4.jpg" alt="photo Daniel Wilson" width="264" height="260">
+                <li class="team-list-item">
+                  <picture>
+                     <source media="(min-width: 1158px)" srcset="./images/images1x2x/img4@1xdekstop.jpg 1x,
+                                                 ./images/images1x2x/img4@2xdekstop.jpg 2x" />
+                     <source media="(min-width: 768px)" srcset="./images/images1x2x/img3@1x-tablet.jpg 1x,
+                      ./images/images1x2x/img3@2x-tablet.jpg 2x" />
+                      <source media="(max-width: 767px)" srcset="./images/images1x2x/img4@1xmobile.jpg 1x, 
+                      ./images/images1x2x/img4@2xmobile.jpg 2x" />
+                      <img src="./images/img4.jpg" alt="photo Daniel Wilson" width="264" height="260">
+               </picture>
+               
                    <div class="team-name-container">    
                         <h3 class="our-team-name">Daniel Wilson</h3>
                           <p class="out-team-text">UI Designer</p>
@@ -281,7 +299,16 @@
               <ul class="portfolio-list">
                  <li class="portfolio-list-item">
                     <div class="portfolio-overlay">
-                      <img src="./images/img5.jpg" alt="Banking App" width="360" height="300">
+                     <picture>
+                        <source media="(min-width: 1158px)" srcset="./images/images1x2x/portfolio@1xdekstop.jpg 1x,
+                                                    ./images/images1x2x/portfolio@2xdekstop.jpg 2x" />
+                        <source media="(min-width: 768px)" srcset="./images/images1x2x/portfolio@1xtablet.jpg 1x,
+                         ./images/images1x2x/portfolio@2xtablet.jpg 2x" />
+                         <source media="(max-width: 767px)" srcset="./images/images1x2x/portfolio@1xmobile.jpg 1x, 
+                         ./images/images1x2x/portfolio@2xmobile.jpg 2x" />
+                         <img src="./images/img5.jpg" alt="Banking App" width="360" height="300">
+                  </picture>
+                      
                       <p class="paragraph-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
                        <div class="portfolio-text-container">
@@ -292,7 +319,16 @@
                  </li>
                  <li class="portfolio-list-item">
                     <div class="portfolio-overlay">
-                        <img src="./images/img6.jpg" alt="Cashless Payment" width="360" height="300">
+                     <picture>
+                        <source media="(min-width: 1158px)" srcset="./images/images1x2x/portfolio1@1xdekstop.jpg 1x,
+                                                    ./images/images1x2x/portfolio1@2xdekstop.jpg 2x" />
+                        <source media="(min-width: 768px)" srcset="./images/images1x2x/portfolio1@1xtablet.jpg 1x,
+                         ./images/images1x2x/portfolio1@2xtablet.jpg 2x" />
+                         <source media="(max-width: 767px)" srcset="./images/images1x2x/portfolio1@1xmobile.jpg 1x, 
+                         ./images/images1x2x/portfolio1@2xmobile.jpg 2x" width="288px" />
+                         <img src="./images/img6.jpg" alt="Cashless Payment" width="360" height="300">
+                  </picture>
+                        
                        <p class="paragraph-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                      </div>
                        <div class="portfolio-text-container">
@@ -303,7 +339,16 @@
                  </li>
                  <li class="portfolio-list-item">
                     <div class="portfolio-overlay">
-                       <img src="./images/img7.jpg" alt="Meditation App" width="360" height="300">
+                     <picture>
+                        <source media="(min-width: 1158px)" srcset="./images/images1x2x/portfolio3@1xdekstop.jpg 1x,
+                                                    ./images/images1x2x/portfolio3@2xdekstop.jpg 2x" />
+                        <source media="(min-width: 768px)" srcset="./images/images1x2x/portfolio3@1xtablet.jpg 1x,
+                         ./images/images1x2x/portfolio3@2xtablet.jpg 2x" />
+                         <source media="(max-width: 767px)" srcset="./images/images1x2x/portfolio2@1xmobile.jpg 1x, 
+                         ./images/images1x2x/portfolio2@2xmobile.jpg 2x" />
+                         <img src="./images/img7.jpg" alt="Meditation App" width="360" height="300">
+                  </picture>
+                       
                        <p class="paragraph-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
                        <div class="portfolio-text-container">
@@ -314,7 +359,16 @@
                  </li>
                  <li class="portfolio-list-item">
                     <div class="portfolio-overlay">
-                      <img src="./images/img8.jpg" alt="Taxi Service" width="360" height="300">
+                     <picture>
+                        <source media="(min-width: 1158px)" srcset="./images/images1x2x/portfolio4@1xdekstop.jpg 1x,
+                                                    ./images/images1x2x/portfolio4@2xdekstop.jpg 2x" />
+                        <source media="(min-width: 768px)" srcset="./images/images1x2x/portfolio4@1xtablet.jpg 1x,
+                         ./images/images1x2x/portfolio4@2xtablet.jpg 2x" />
+                         <source media="(max-width: 767px)" srcset="./images/images1x2x/portfolio3@1xmobile.jpg 1x, 
+                         ./images/images1x2x/portfolio3@2xmobile.jpg 2x" />
+                         <img src="./images/img8.jpg" alt="Taxi Service" width="360" height="300">
+                  </picture>
+                      
                       <p class="paragraph-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
                         <div class="portfolio-text-container">
@@ -325,7 +379,16 @@
                  </li>
                  <li class="portfolio-list-item">
                    <div class="portfolio-overlay">
-                      <img src="./images/img9.jpg" alt="Screen Illustrations" width="360" height="300">
+                     <picture>
+                        <source media="(min-width: 1158px)" srcset="./images/images1x2x/portfolio5@1xdekstop.jpg 1x,
+                                                    ./images/images1x2x/portfolio5@2xdekstop.jpg 2x" />
+                        <source media="(min-width: 768px)" srcset="./images/images1x2x/portfolio5@1xtablet.jpg 1x,
+                         ./images/images1x2x/portfolio5@2xtablet.jpg 2x" />
+                         <source media="(max-width: 767px)" srcset="./images/images1x2x/portfolio4@1xmobile.jpg 1x, 
+                         ./images/images1x2x/portfolio4@2xmobile.jpg 2x" />
+                         <img src="./images/img9.jpg" alt="Screen Illustrations" width="360" height="300">
+                  </picture>
+                      
                       <p class="paragraph-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
                     <div class="portfolio-text-container">
@@ -336,8 +399,16 @@
                  </li>
                  <li class="portfolio-list-item">
                     <div class="portfolio-overlay">
-                     
-                        <img src="./images/img10.jpg" alt="Online Courses" width="360" height="300">
+                     <picture>
+                        <source media="(min-width: 1158px)" srcset="./images/images1x2x/portfolio6@1xdekstop.jpg 1x,
+                                                    ./images/images1x2x/portfolio6@2xdekstop.jpg 2x" />
+                        <source media="(min-width: 768px)" srcset="./images/images1x2x/portfolio6@1xtablet.jpg 1x,
+                         ./images/images1x2x/portfolio6@2xtablet.jpg 2x" />
+                         <source media="(max-width: 767px)" srcset="./images/images1x2x/portfolio5@1xmobile.jpg 1x, 
+                         ./images/images1x2x/portfolio5@2xmobile.jpg 2x" />
+                         <img src="./images/img10.jpg" alt="Online Courses" width="360" height="300">
+                  </picture>
+                        
                         <p class="paragraph-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p> 
                     </div>
                        <div class="portfolio-text-container">
@@ -401,13 +472,11 @@
                  <form class="form-class" action="#" method="post">
                     <!-- Поле для введення e-mail -->
                     <label class="label-class">
-                      <input 
-                        class="input-class" 
+                      <input class="input-class" 
                         type="email" 
                         name="email-field" 
                         placeholder="E-mail"
-                        required
-                      >
+                        required>
                     </label>
                   
                     <!-- Кнопка підписки -->
